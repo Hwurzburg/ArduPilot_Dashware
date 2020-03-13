@@ -1,0 +1,36 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="1869.27" height="91.42142" transparency="0.9" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <TickerTape x="0" y="0" orientation="Horizontal, Units on Bottom" reverse="False" minValue="0" maxValue="360" loop="True" length="1800" spacing="87.91783" labelOffset="16.83755" valueLineLength="56.12514" minorTickUnit="5" minorTickLength="16.83755" minorTickPenWidth="3.367509" minorTickTransparency="1" minorTickRed="255" minorTickGreen="255" minorTickBlue="255" majorTickUnit="15" majorTickLength="16.83755" majorTickPenWidth="5.612515" majorTickTransparency="1" majorTickRed="255" majorTickGreen="255" majorTickBlue="255" fontFace="Arial" fontSize="17.96005" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" valueLinePenWidth="1.260013" valueLineTransparency="1" valueLineRed="255" valueLineGreen="255" valueLineBlue="255">
+      <Components>
+        <FilledRectangle x="924.2486" y="21.90555" width="6.330719" height="31.65359" roundCorners="False" cornerRadius="7.9134" transparency="1" red="255" green="255" blue="255">
+          <Components>
+            <FilledRectangle x="-1.582642" y="-3.165359" width="9.496079" height="31.65359" roundCorners="False" cornerRadius="7.9134" transparency="1" red="255" green="255" blue="255">
+              <Components>
+                <FilledRectangle x="-1.582764" y="-3.165359" width="12.66144" height="31.65359" roundCorners="False" cornerRadius="7.9134" transparency="1" red="255" green="255" blue="255" />
+              </Components>
+            </FilledRectangle>
+            <FilledRectangle x="-34.81885" y="-26.90555" width="74.38596" height="44.31503" roundCorners="False" cornerRadius="7.9134" transparency="1" red="255" green="255" blue="255">
+              <Components>
+                <FilledRectangle x="3.165283" y="3.165362" width="68.05524" height="37.98432" roundCorners="False" cornerRadius="7.9134" transparency="1" red="32" green="29" blue="29">
+                  <Components>
+                    <DynamicText x="-20.57483" y="0" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="104.4568" fontRectHeight="39.56699" fontFace="Arial" fontSize="22.15752" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+                      <Inputs>
+                        <Input name="Value">Heading</Input>
+                      </Inputs>
+                    </DynamicText>
+                  </Components>
+                </FilledRectangle>
+              </Components>
+            </FilledRectangle>
+          </Components>
+        </FilledRectangle>
+      </Components>
+      <Inputs>
+        <Input name="Value">Heading</Input>
+      </Inputs>
+    </TickerTape>
+  </Components>
+  <Inputs>
+    <Input category="Positional" name="Heading" fromFastestLapSamePos="False">Heading</Input>
+  </Inputs>
+</Gauge>
