@@ -1,0 +1,27 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="228.6662" height="200.146" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledRectangle x="44.12964" y="117.6869" width="144.4068" height="47.23795" roundCorners="True" cornerRadius="4.723795" transparency="0.3921569" red="0" green="0" blue="0">
+      <Components>
+        <DynamicText x="0" y="-1.444244" displayType="Decimal" decimalPrecision="1" showPlus="True" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="144.4068" fontRectHeight="57.76274" fontFace="Arial" fontSize="24" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="252" fontGreen="247" fontBlue="247">
+          <Inputs>
+            <Input name="Value">Roll</Input>
+          </Inputs>
+        </DynamicText>
+      </Components>
+    </FilledRectangle>
+    <Pie x="116.3331" y="104.6902" minAngle="-180" maxAngle="0" radius="18.77289" transparency="1" red="255" green="255" blue="255" />
+    <Pie x="116.3331" y="104.6901" minAngle="-180" maxAngle="0" radius="15.88475" transparency="1" red="0" green="0" blue="0" />
+    <Rectangle x="0.2850342" y="103.2461" width="187.1766" height="0.7542335" roundCorners="False" cornerRadius="3.771168" penWidth="0.7542335" transparency="1" red="255" green="255" blue="255">
+      <Components>
+        <Needle x="115.3978" y="-8.392334E-05" length="102.5758" offset="1.232753E-06" loop="False" syncValueRangeWithParent="False" syncAngleRangeWithParent="False" autoMinValue="False" restrictMinValue="False" lowestMinValue="0" highestMinValue="100" minValue="-45" autoMaxValue="False" restrictMaxValue="False" lowestMaxValue="10" highestMaxValue="1000000" maxValue="45" minAngle="-135" maxAngle="-45" penWidth="5.128788" transparency="1" red="6" green="6" blue="6">
+          <Inputs>
+            <Input name="Value">Roll</Input>
+          </Inputs>
+        </Needle>
+      </Components>
+    </Rectangle>
+  </Components>
+  <Inputs>
+    <Input category="Positional" name="Roll" fromFastestLapSamePos="False">Roll</Input>
+  </Inputs>
+</Gauge>
