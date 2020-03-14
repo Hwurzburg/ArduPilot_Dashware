@@ -1,0 +1,112 @@
+<Project version="2">
+  <Information logoX="-1" logoY="-1" logoWidth="-1" logoHeight="-1">
+    <StartTitle enabled="False" duration="2" fadeIn="False" fadeInDuration="0.5" fadeOut="False" fadeOutDuration="1" fontRectWidth="1" fontRectHeight="1" fontFace="Arial" fontSize="64" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" backgroundTransparency="0" backgroundRed="255" backgroundGreen="255" backgroundBlue="255">
+    </StartTitle>
+    <EndTitle enabled="False" duration="3" fadeIn="False" fadeInDuration="2.5" fadeOut="False" fadeOutDuration="1" fontRectWidth="1" fontRectHeight="1" fontFace="Arial" fontSize="64" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" backgroundTransparency="1" backgroundRed="0" backgroundGreen="0" backgroundBlue="0">
+    </EndTitle>
+    <Notes>Enter your project notes.</Notes>
+  </Information>
+  <InputSettings>
+    <DataFiles>
+      <DataFile profile="ArduPilot" fileName="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv" currentTime="137.555696112496" dataSynced="True" syncOffset="105.273311812496" closedCourse="False" startFinishSetInUI="True" openCourseStartOffset="0" openCourseFinishOffset="142313" lapStartX="-35656175.4186677" lapStartY="11719556.0766957" lapEndX="-35656187.5805412" lapEndY="11719559.4687978" lapToDraw="0" startFinishDistanceThreshold="40" showDistanceThreshold="True" ignoreFirstLap="True" ignoreLastLap="True" lapTimeHoldSecs="5" startTrim="89.946" endTrim="1071.625">
+        <LapSplits />
+      </DataFile>
+    </DataFiles>
+    <VideoFiles>
+      <VideoFile trimStart="0" trimEnd="58500" videoUniqueID="" rotateVideo="False">C:\Users\Henry\Desktop\example.mp4</VideoFile>
+    </VideoFiles>
+  </InputSettings>
+  <OutputSettings>
+    <Video />
+    <OverscanSettings useSafeArea="False" showSafeArea="True" percentage="10" />
+  </OutputSettings>
+  <GaugeSettings>
+    <Gauge name="VFR HUD - Imperial" transparency="1" x="201.6088" y="770.7996">
+      <InputMapping gaugeInput="Latitude / Y Position (Degrees)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="GPS_iLat" />
+      <InputMapping gaugeInput="Longitude / X Position (Degrees)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="GPS_iLon" />
+      <InputMapping gaugeInput="Heading" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iYaw" />
+      <InputMapping gaugeInput="Battery Voltage" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iVoltage" />
+      <InputMapping gaugeInput="Battery Ampere" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iBAT_Curr" />
+      <InputMapping gaugeInput="Satellite Count" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iNumSats" />
+      <InputMapping gaugeInput="Satellite HDop" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iGPS_HDop" />
+      <InputMapping gaugeInput="Flightmode" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="CurrentMode" />
+      <InputMapping gaugeInput="Fuel Used" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iBAT_CurrTot" />
+      <InputMapping gaugeInput="Data Running Time, Seconds" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iTime" />
+      <InputMapping gaugeInput="Throttle Position" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iThrottle (%)" />
+      <InputMapping gaugeInput="Air Speed (MPH)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iAirspeed (MPH)" />
+      <InputMapping gaugeInput="Speed (MPH)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iGroundSpeed (mph)" />
+      <InputMapping gaugeInput="Distance from Beginning (Feet)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iHomeDistance(feet)" />
+      <InputMapping gaugeInput="Distance (Feet)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iTotalDistance (feet)" />
+      <InputMapping gaugeInput="Vertical Speed (FPM)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="aBARO_CRt (fpm)" />
+    </Gauge>
+    <Gauge name="Tape Heading" transparency="1" x="-4.614409" y="7.134703">
+      <InputMapping gaugeInput="Heading" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iYaw" />
+    </Gauge>
+    <Gauge name="Tape Altitude Feet" transparency="1" x="1723.82" y="15.36538">
+      <InputMapping gaugeInput="Ground-Based Altitude (Feet)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iAltitude (feet)" />
+    </Gauge>
+    <Gauge name="Flight Mode-Plane" transparency="1" x="35.42315" y="101.6939">
+      <InputMapping gaugeInput="Flightmode" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="CurrentMode" />
+    </Gauge>
+    <Gauge name="Roll Angle" transparency="1" x="1385.684" y="559.6031">
+      <InputMapping gaugeInput="Roll" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iRoll" />
+    </Gauge>
+    <Gauge name="Pitch Angle" transparency="1" x="1472.324" y="471.4158">
+      <InputMapping gaugeInput="Pitch" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="iPitch" />
+    </Gauge>
+    <Gauge name="Map" transparency="1" x="33.33333" y="245.1282">
+      <InputMapping gaugeInput="Latitude / Y Position (Degrees)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="GPS_iLat" />
+      <InputMapping gaugeInput="Longitude / X Position (Degrees)" fromFastestLapSamePos="False" dataFileIndex="0" dataColumn="GPS_iLon" />
+    </Gauge>
+  </GaugeSettings>
+  <ChartSettings>
+    <ChartTab Type="Time">
+      <Inputs>
+        <Input Filename="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv">
+          <Laps>
+            <Lap Number="0" />
+          </Laps>
+        </Input>
+      </Inputs>
+      <Charts>
+        <Chart ChartType="Map">
+          <Graphs>
+            <Graph Input="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv" />
+          </Graphs>
+        </Chart>
+        <Chart ChartType="G-Plot">
+          <Graphs />
+        </Chart>
+        <Chart ChartType="LineChart">
+          <Graphs>
+            <Graph Input="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv" DataType="Speed (MPH)" DataCategory="Velocity" />
+          </Graphs>
+        </Chart>
+      </Charts>
+    </ChartTab>
+    <ChartTab Type="Distance">
+      <Inputs>
+        <Input Filename="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv">
+          <Laps>
+            <Lap Number="0" />
+          </Laps>
+        </Input>
+      </Inputs>
+      <Charts>
+        <Chart ChartType="Map">
+          <Graphs>
+            <Graph Input="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv" />
+          </Graphs>
+        </Chart>
+        <Chart ChartType="G-Plot">
+          <Graphs />
+        </Chart>
+        <Chart ChartType="LineChart">
+          <Graphs>
+            <Graph Input="C:\Users\Henry\Documents\DashWare Projects\Example\Ardupilot.csv" DataType="Speed (MPH)" DataCategory="Velocity" />
+          </Graphs>
+        </Chart>
+      </Charts>
+    </ChartTab>
+  </ChartSettings>
+</Project>
