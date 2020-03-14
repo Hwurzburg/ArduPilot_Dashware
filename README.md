@@ -1,5 +1,5 @@
 # ArduPilot_Dashware
-Repo for ArduPilot Oriented DASHWARE guages,profiles, and templates
+Repo for ArduPilot Oriented DASHWARE (http://www.dashware.net/) gauges,profiles, and templates
 
 This is an update to OverloadUT/apm-dashware files with updated gauges and data profiles for ArduPilot vehicles.
 
