@@ -1,7 +1,7 @@
 # ArduPilot_Dashware
 Repo for ArduPilot Oriented DASHWARE guages,profiles, and templates
 
-This is an update to OverloadUT/apm-dashware files with updated guages and data profiles for ArduPilot vehicles.
+This is an update to OverloadUT/apm-dashware files with updated gauges and data profiles for ArduPilot vehicles.
 
 Hopefully, once updated, other interested parties will contribute more guages and extensions targeted for Ardupilot videos
 
