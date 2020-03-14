@@ -12,17 +12,17 @@
         </FilledRectangle>
       </Components>
       <Inputs>
-        <Input name="Value">Ground-Based Altitude (Meters)</Input>
+        <Input name="Value">Ground-Based Altitude (Feet)</Input>
       </Inputs>
     </TickerTape>
     <DynamicText x="3" y="440" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="89" fontRectHeight="50" fontFace="Arial" fontSize="30" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
       <Inputs>
-        <Input name="Value">Ground-Based Altitude (Meters)</Input>
+        <Input name="Value">Ground-Based Altitude (Feet)</Input>
       </Inputs>
     </DynamicText>
     <Text x="30" y="896" text="METERS" fontRectWidth="123.7778" fontRectHeight="35.41666" fontFace="Arial" fontSize="17" fontBold="True" fontItalic="True" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
   </Components>
   <Inputs>
-    <Input category="Positional" name="Ground-Based Altitude (Meters)" fromFastestLapSamePos="False">Ground-Based Altitude (Meters)</Input>
+    <Input category="Positional" name="Ground-Based Altitude (Feet)" fromFastestLapSamePos="False">Ground-Based Altitude (Feet)</Input>
   </Inputs>
 </Gauge>

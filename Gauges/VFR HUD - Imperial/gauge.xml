@@ -3,20 +3,20 @@
     <FilledRectangle x="0" y="0" width="1539" height="272" roundCorners="False" cornerRadius="18.18356" transparency="0.1568628" red="16" green="116" blue="143" />
     <Rectangle x="0" y="0" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
-        <Text x="6" y="4" text="AirSpeed  (m/s)" fontRectWidth="282" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <Text x="6" y="4" text="AirSpeed  (mph)" fontRectWidth="282" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
         <DynamicText x="100" y="34" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
-            <Input name="Value">Air Speed (m/s)</Input>
+            <Input name="Value">Air Speed (MPH)</Input>
           </Inputs>
         </DynamicText>
       </Components>
     </Rectangle>
     <Rectangle x="0" y="90" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
-        <Text x="6" y="4" text="GndSpeed (m/s)" fontRectWidth="277" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <Text x="6" y="4" text="GndSpeed (mph)" fontRectWidth="289" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
         <DynamicText x="100" y="34" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
-            <Input name="Value">Speed (m/s)</Input>
+            <Input name="Value">Speed (MPH)</Input>
           </Inputs>
         </DynamicText>
       </Components>
@@ -51,19 +51,9 @@
         </DynamicText>
       </Components>
     </Rectangle>
-    <Rectangle x="384" y="180" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
-      <Components>
-        <Text x="775" y="11" text="TIME (s)" fontRectWidth="244" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
-      </Components>
-    </Rectangle>
     <Rectangle x="1150" y="180" width="384" height="90" roundCorners="False" cornerRadius="2.461308" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
-        <Text x="-759" y="6" text="Heading" fontRectWidth="239.5521" fontRectHeight="45.79787" fontFace="Arial" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
-        <DynamicText x="-663.8229" y="27.97873" displayType="Integer" decimalPrecision="7" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="269.987" fontRectHeight="67.02128" fontFace="Arial" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
-          <Inputs>
-            <Input name="Value">Heading</Input>
-          </Inputs>
-        </DynamicText>
+        <Text x="9" y="11" text="Time (s)" fontRectWidth="244" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
         <DynamicText x="104.1771" y="21.97873" displayType="Integer" decimalPrecision="7" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="269.987" fontRectHeight="67.02128" fontFace="Arial" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
             <Input name="Value">Data Running Time, Seconds</Input>
@@ -71,10 +61,20 @@
         </DynamicText>
       </Components>
     </Rectangle>
+    <Rectangle x="384" y="180" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
+      <Components>
+        <Text x="7" y="6" text="Climb Rate (fpm)" fontRectWidth="281.5521" fontRectHeight="45.79787" fontFace="Arial" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <DynamicText x="102.1771" y="27.97873" displayType="Integer" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="269.987" fontRectHeight="67.02128" fontFace="Arial" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+          <Inputs>
+            <Input name="Value">Vertical Speed (FPM)</Input>
+          </Inputs>
+        </DynamicText>
+      </Components>
+    </Rectangle>
     <Rectangle x="767" y="90" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
         <Text x="6" y="4" text="Battery Volts" fontRectWidth="244" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
-        <DynamicText x="100" y="34" displayType="Decimal" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+        <DynamicText x="100" y="34" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
             <Input name="Value">Battery Voltage</Input>
           </Inputs>
@@ -84,29 +84,29 @@
     <Rectangle x="767" y="180" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
         <Text x="6" y="4" text="Battery Amp" fontRectWidth="244" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
-        <DynamicText x="100" y="34" displayType="Decimal" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+        <DynamicText x="100" y="34" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
             <Input name="Value">Battery Ampere</Input>
           </Inputs>
         </DynamicText>
       </Components>
     </Rectangle>
-    <Rectangle x="1150" y="0" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
+    <Rectangle x="1150" y="90" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
-        <Text x="8" y="98" text="Total Dist Travelled (m)" fontRectWidth="387" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <Text x="8" y="-87" text="Home Dist (feet)" fontRectWidth="273" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
         <DynamicText x="100" y="34" displayType="Integer" decimalPrecision="7" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
-            <Input name="Value">Distance from Beginning (Meters)</Input>
+            <Input name="Value">Distance (Feet)</Input>
           </Inputs>
         </DynamicText>
       </Components>
     </Rectangle>
-    <Rectangle x="1150" y="90" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
+    <Rectangle x="1150" y="0" width="384" height="90" roundCorners="False" cornerRadius="5" penWidth="1" transparency="1" red="255" green="255" blue="255">
       <Components>
-        <Text x="8" y="-87" text="Home Dist (m)" fontRectWidth="244" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <Text x="8" y="98" text="Total Distance (feet)" fontRectWidth="387" fontRectHeight="41" fontFace="Estrangelo Edessa" fontSize="26" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
         <DynamicText x="100" y="34" displayType="Integer" decimalPrecision="7" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="275" fontRectHeight="60" fontFace="Estrangelo Edessa" fontSize="42" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
           <Inputs>
-            <Input name="Value">Distance (Meters)</Input>
+            <Input name="Value">Distance from Beginning (Feet)</Input>
           </Inputs>
         </DynamicText>
       </Components>
@@ -126,21 +126,18 @@
     <Input category="Positional" name="Latitude / Y Position (Degrees)" fromFastestLapSamePos="False">Latitude / Y Position (Degrees)</Input>
     <Input category="Positional" name="Longitude / X Position (Degrees)" fromFastestLapSamePos="False">Longitude / X Position (Degrees)</Input>
     <Input category="Positional" name="Heading" fromFastestLapSamePos="False">Heading</Input>
-    <Input category="Positional" name="Ground-Based Altitude (Meters)" fromFastestLapSamePos="False">Ground-Based Altitude (Meters)</Input>
-    <Input category="Positional" name="Ground-Based Altitude Max (Meters)" fromFastestLapSamePos="False">Ground-Based Altitude Max (Meters)</Input>
     <Input category="Engine, Transmission" name="Battery Voltage" fromFastestLapSamePos="False">Battery Voltage</Input>
     <Input category="Engine, Transmission" name="Battery Ampere" fromFastestLapSamePos="False">Battery Ampere</Input>
-    <Input category="Velocity" name="Vertical Speed (m/s)" fromFastestLapSamePos="False">Vertical Speed (m/s)</Input>
-    <Input category="Velocity" name="Air Speed (m/s)" fromFastestLapSamePos="False">Air Speed (m/s)</Input>
-    <Input category="Positional" name="Distance (Meters)" fromFastestLapSamePos="False">Distance (Meters)</Input>
-    <Input category="Positional" name="Distance from Beginning (Meters)" fromFastestLapSamePos="False">Distance from Beginning (Meters)</Input>
     <Input category="Positional" name="Satellite Count" fromFastestLapSamePos="False">Satellite Count</Input>
     <Input category="Positional" name="Satellite HDop" fromFastestLapSamePos="False">Satellite HDop</Input>
     <Input category="Engine, Transmission" name="Flightmode" fromFastestLapSamePos="False">Flightmode</Input>
-    <Input category="Velocity" name="Speed (m/s)" fromFastestLapSamePos="False">Speed (m/s)</Input>
     <Input category="Engine, Transmission" name="Fuel Used" fromFastestLapSamePos="False">Fuel Used</Input>
-    <Input category="Positional" name="Distance (Feet)" fromFastestLapSamePos="False">Distance (Feet)</Input>
     <Input category="&lt;Required&gt;" name="Data Running Time, Seconds" fromFastestLapSamePos="False">Data Running Time, Seconds</Input>
     <Input category="Steering, Throttle, Brakes" name="Throttle Position" fromFastestLapSamePos="False">Throttle Position</Input>
+    <Input category="Velocity" name="Air Speed (MPH)" fromFastestLapSamePos="False">Air Speed (MPH)</Input>
+    <Input category="Velocity" name="Speed (MPH)" fromFastestLapSamePos="False">Speed (MPH)</Input>
+    <Input category="Positional" name="Distance from Beginning (Feet)" fromFastestLapSamePos="False">Distance from Beginning (Feet)</Input>
+    <Input category="Positional" name="Distance (Feet)" fromFastestLapSamePos="False">Distance (Feet)</Input>
+    <Input category="Velocity" name="Vertical Speed (FPM)" fromFastestLapSamePos="False">Vertical Speed (FPM)</Input>
   </Inputs>
 </Gauge>

@@ -110,6 +110,14 @@
         <OutputColumn>iTotalDistance (feet)</OutputColumn>
       </OutputColumns>
     </DistanceTravelledCalculator>
+    <DistanceConverter inputUnit="Feet" outputUnit="Meters">
+      <InputColumns>
+        <InputColumn>iTotalDistance (feet)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iTotalDistance (m)</OutputColumn>
+      </OutputColumns>
+    </DistanceConverter>
     <DistanceConverter inputUnit="Feet" outputUnit="Miles">
       <InputColumns>
         <InputColumn>iTotalDistance (feet)</InputColumn>
@@ -221,7 +229,7 @@
         <InputColumn>BAT_Volt</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iVoltage (x100)</OutputColumn>
+        <OutputColumn>iVoltage</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
     <MathCalculator mathOperation="Divide" parameter="1" useConstantParameter="True">
@@ -232,35 +240,6 @@
       </InputColumns>
       <OutputColumns>
         <OutputColumn>iVoltage</OutputColumn>
-      </OutputColumns>
-    </MathCalculator>
-    <MathCalculator mathOperation="Divide" parameter="100" useConstantParameter="True">
-      <InputColumns>
-        <InputColumn>iThrottle (%)</InputColumn>
-        <InputColumn>
-        </InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iThrottle (%/100)</OutputColumn>
-      </OutputColumns>
-    </MathCalculator>
-    <MathCalculator mathOperation="Multiply" parameter="0" useConstantParameter="False">
-      <InputColumns>
-        <InputColumn>iThrottle (%/100)</InputColumn>
-        <InputColumn>iVoltage</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iEngineVoltage</OutputColumn>
-      </OutputColumns>
-    </MathCalculator>
-    <MathCalculator mathOperation="Multiply" parameter="1200" useConstantParameter="True">
-      <InputColumns>
-        <InputColumn>iEngineVoltage</InputColumn>
-        <InputColumn>
-        </InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iEngine RPM</OutputColumn>
       </OutputColumns>
     </MathCalculator>
     <UsePreviousValueCalculator>
@@ -287,31 +266,6 @@
         <OutputColumn>iBAT_CurrTot</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
-    <DistanceTravelledCalculator inputUnit="Meters" outputUnit="Meters">
-      <InputColumns>
-        <InputColumn>iGPS_Lon</InputColumn>
-        <InputColumn>iGPS_Lat</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>Distance</OutputColumn>
-      </OutputColumns>
-    </DistanceTravelledCalculator>
-    <DistanceConverter inputUnit="Feet" outputUnit="Meters">
-      <InputColumns>
-        <InputColumn>iTotalDistance (feet)</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iTotalDistance (m)</OutputColumn>
-      </OutputColumns>
-    </DistanceConverter>
-    <LinearInterpolator filterValues="False" standardDevCeiling="5">
-      <InputColumns>
-        <InputColumn>GPS_VZ</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iGPS_VZ</OutputColumn>
-      </OutputColumns>
-    </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
         <InputColumn>Home_Dist</InputColumn>
@@ -320,6 +274,48 @@
         <OutputColumn>iHomeDistance</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
+    <DistanceConverter inputUnit="Meters" outputUnit="Feet">
+      <InputColumns>
+        <InputColumn>iHomeDistance</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iHomeDistance(feet)</OutputColumn>
+      </OutputColumns>
+    </DistanceConverter>
+    <AveragingCalculator parameter="0.5" mode="Simple" direction="Backwards and Forwards">
+      <InputColumns>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>
+        </OutputColumn>
+      </OutputColumns>
+    </AveragingCalculator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="4">
+      <InputColumns>
+        <InputColumn>BARO_CRt</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iBARO_CRt</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <AveragingCalculator parameter="0.5" mode="Simple" direction="Backwards and Forwards">
+      <InputColumns>
+        <InputColumn>iBARO_CRt</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>aBARO_CRt</OutputColumn>
+      </OutputColumns>
+    </AveragingCalculator>
+    <SpeedConverter inputUnit="m/s" outputUnit="FPM">
+      <InputColumns>
+        <InputColumn>aBARO_CRt</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>aBARO_CRt (fpm)</OutputColumn>
+      </OutputColumns>
+    </SpeedConverter>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -333,8 +329,8 @@
     <ColumnMapping inputColumnText="iAltitude (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Ground-Based Altitude (Meters)" />
     <ColumnMapping inputColumnText="iAltitude (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Ground-Based Altitude (Feet)" />
     <ColumnMapping inputColumnText="iNumSats" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Satellite Count" />
-    <ColumnMapping inputColumnText="iThrottle (%)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Steering, Throttle, Brakes" dataType="Throttle Position" />
     <ColumnMapping inputColumnText="iTotalDistance (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Feet)" />
+    <ColumnMapping inputColumnText="iTotalDistance (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Meters)" />
     <ColumnMapping inputColumnText="iTotalDistance (miles)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Miles)" />
     <ColumnMapping inputColumnText="iRoll" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Roll" />
     <ColumnMapping inputColumnText="iPitch" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Pitch" />
@@ -343,16 +339,15 @@
     <ColumnMapping inputColumnText="iGroundSpeed (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Speed (m/s)" />
     <ColumnMapping inputColumnText="iGroundSpeed (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Speed (MPH)" />
     <ColumnMapping inputColumnText="iGroundSpeed (kph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Speed (KPH)" />
-    <ColumnMapping inputColumnText="iEngine RPM" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
+    <ColumnMapping inputColumnText="CurrentMode" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Flightmode" />
+    <ColumnMapping inputColumnText="iThrottle (%)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Steering, Throttle, Brakes" dataType="Throttle Position" />
     <ColumnMapping inputColumnText="iVoltage" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Battery Voltage" />
-    <ColumnMapping inputColumnText="iRoll Desired" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Generic" dataType="Other" />
-    <ColumnMapping inputColumnText="iPitch Desired" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Generic" dataType="Other" />
     <ColumnMapping inputColumnText="iGPS_HDop" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Satellite HDop" />
     <ColumnMapping inputColumnText="iBAT_Curr" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Battery Ampere" />
     <ColumnMapping inputColumnText="iBAT_CurrTot" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Fuel Used" />
-    <ColumnMapping inputColumnText="iTotalDistance (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Meters)" />
-    <ColumnMapping inputColumnText="CurrentMode" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Flightmode" />
-    <ColumnMapping inputColumnText="iGPS_VZ" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (m/s)" />
     <ColumnMapping inputColumnText="iHomeDistance" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
+    <ColumnMapping inputColumnText="iHomeDistance(feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Feet)" />
+    <ColumnMapping inputColumnText="aBARO_CRt" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (m/s)" />
+    <ColumnMapping inputColumnText="aBARO_CRt (fpm)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (FPM)" />
   </ColumnMappings>
 </DataProfile>
