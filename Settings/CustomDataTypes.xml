@@ -9,4 +9,22 @@
   <Category name="Generic">
     <DataType>RCIN1</DataType>
   </Category>
+  <Category name="RCIN,SERVO">
+    <DataType>RC1</DataType>
+    <DataType>RC2</DataType>
+    <DataType>RC3</DataType>
+    <DataType>RC4</DataType>
+    <DataType>RC5</DataType>
+    <DataType>RC6</DataType>
+    <DataType>RC7</DataType>
+    <DataType>RC8</DataType>
+    <DataType>SERVO1</DataType>
+    <DataType>SERVO2</DataType>
+    <DataType>SERVO3</DataType>
+    <DataType>SERVO4</DataType>
+    <DataType>SERVO5</DataType>
+    <DataType>SERVO6</DataType>
+    <DataType>SERVO7</DataType>
+    <DataType>SERVO8</DataType>
+  </Category>
 </DataTypes>
