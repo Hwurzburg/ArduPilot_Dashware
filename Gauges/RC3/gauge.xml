@@ -1,0 +1,27 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="333" height="48" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledRectangle x="2" y="-5" width="334" height="60" roundCorners="False" cornerRadius="33.84" transparency="0.254902" red="8" green="8" blue="8" />
+    <Rectangle x="141" y="0" width="2" height="50" roundCorners="False" cornerRadius="5" penWidth="3" transparency="1" red="11" green="11" blue="11" />
+    <Rectangle x="81" y="13" width="124" height="23" roundCorners="False" cornerRadius="12.77778" penWidth="5.555556" transparency="1" red="4" green="4" blue="4">
+      <Components>
+        <Bar x="3" y="3" width="119" height="18" minValue="1000" maxValue="2000" direction="LeftToRight" startTransparency="1" startRed="255" startGreen="0" startBlue="0" endTransparency="1" endRed="255" endGreen="0" endBlue="0">
+          <Inputs>
+            <Input name="Value">RC3</Input>
+          </Inputs>
+        </Bar>
+      </Components>
+    </Rectangle>
+    <Text x="0" y="11" text="RC3" fontRectWidth="76" fontRectHeight="25" fontFace="Arial" fontSize="21" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Components>
+        <DynamicText x="234" y="-1" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="90" fontRectHeight="25" fontFace="Arial" fontSize="21" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+          <Inputs>
+            <Input name="Value">RC3</Input>
+          </Inputs>
+        </DynamicText>
+      </Components>
+    </Text>
+  </Components>
+  <Inputs>
+    <Input category="RCIN,SERVO" name="RC3" fromFastestLapSamePos="False">RC3</Input>
+  </Inputs>
+</Gauge>

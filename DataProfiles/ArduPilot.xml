@@ -316,6 +316,70 @@
         <OutputColumn>aBARO_CRt (fpm)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C1</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C1</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C2</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C2</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C3</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C3</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C4</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C4</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C1</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C1</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C2</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C2</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C3</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C3</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C4</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C4</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -349,5 +413,13 @@
     <ColumnMapping inputColumnText="iHomeDistance(feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Feet)" />
     <ColumnMapping inputColumnText="aBARO_CRt" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (m/s)" />
     <ColumnMapping inputColumnText="aBARO_CRt (fpm)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (FPM)" />
+    <ColumnMapping inputColumnText="iRCIN_C1" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC1" />
+    <ColumnMapping inputColumnText="iRCIN_C2" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC2" />
+    <ColumnMapping inputColumnText="iRCIN_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC3" />
+    <ColumnMapping inputColumnText="iRCIN_C4" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC4" />
+    <ColumnMapping inputColumnText="iRCOU_C1" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO1" />
+    <ColumnMapping inputColumnText="iRCOU_C2" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO2" />
+    <ColumnMapping inputColumnText="iRCOU_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO3" />
+    <ColumnMapping inputColumnText="iRCOU_C4" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO4" />
   </ColumnMappings>
 </DataProfile>
