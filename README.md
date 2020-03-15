@@ -19,7 +19,7 @@ Tasks:
 
 [ ] Convert above to imperial
 
-[ ] RCIN/SERVO gauge
+[X] RCIN/SERVO gauge
 
 Thanks to Mark Whitehorn for his help in getting me up to speed on Dashware and other assistance
 
