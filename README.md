@@ -5,7 +5,7 @@ This is an update to OverloadUT/apm-dashware files with updated gauges and data 
 
 Hopefully, once updated, other interested parties will contribute more guages and extensions targeted for Ardupilot videos
 
-Example: https://youtu.be/CRyn336Qmj8
+Example: https://youtu.be/mdaCKloMmdU
 
 Tasks:
 
