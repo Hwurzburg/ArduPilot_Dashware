@@ -1,0 +1,54 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="342.2051" height="142.6379" transparency="0.6" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledRectangle x="0" y="0" width="345.2051" height="144.6379" roundCorners="False" cornerRadius="5.3489" transparency="1" red="0" green="0" blue="0">
+      <Components>
+        <Digit x="160" y="0" transparency="1" valueType="Number" divisor="1" width="171" height="46" src0="0 Manual.png" src1="1 Circle.png" src2="2 Stabilize.png" src3="3 Training.png" src4="4 Acro.png" src5="5 FBWA.png" src6="6 FBWB.png" src7="7 Cruise.png" src8="8 Autotune.png" src9="NIX.png">
+          <Components>
+            <Bar x="0" y="0" width="171" height="46" minValue="10" maxValue="10" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+          </Components>
+          <Inputs>
+            <Input name="Value">Flightmode</Input>
+          </Inputs>
+        </Digit>
+        <Digit x="161" y="47" transparency="1" valueType="Number" divisor="1" width="171" height="46" src0="10 Auto.png" src1="11 RTL.png" src2="12 Loiter.png" src3="13 TakeOff.png" src4="14 Avoid ADSB.png" src5="15 Guided.png" src6="NIX.png" src7="17 Qstabi.png" src8="18 Qhover.png" src9="19 Qloiter.png">
+          <Components>
+            <Bar x="0" y="0" width="171" height="46" minValue="20" maxValue="20" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+            <Bar x="0" y="0" width="171" height="46" minValue="10" maxValue="9" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+          </Components>
+          <Inputs>
+            <Input name="Value">Flightmode</Input>
+          </Inputs>
+        </Digit>
+        <Digit x="161" y="94" transparency="1" valueType="Number" divisor="1" width="171" height="46" src0="20 Qland.png" src1="21 Qrtl.png" src2="22 QAutoTune.png" src3="23 QAcro.png" src4="NIX.png" src5="NIX.png" src6="NIX.png" src7="NIX.png" src8="NIX.png" src9="NIX.png">
+          <Components>
+            <Bar x="0" y="0" width="171" height="46" minValue="20" maxValue="19" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+          </Components>
+          <Inputs>
+            <Input name="Value">Flightmode</Input>
+          </Inputs>
+        </Digit>
+        <Text x="17" y="21" text="FLT" fontRectWidth="97" fontRectHeight="53" fontFace="Arial" fontSize="30" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <Text x="-2" y="71" text="MODE" fontRectWidth="138" fontRectHeight="45" fontFace="Arial" fontSize="30" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+      </Components>
+    </FilledRectangle>
+  </Components>
+  <Inputs>
+    <Input category="Engine, Transmission" name="Flightmode" fromFastestLapSamePos="False">Flightmode</Input>
+  </Inputs>
+</Gauge>

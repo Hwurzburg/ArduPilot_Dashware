@@ -1,0 +1,54 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="342.2051" height="142.6379" transparency="0.6" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledRectangle x="0" y="0" width="345.2051" height="144.6379" roundCorners="False" cornerRadius="5.3489" transparency="1" red="0" green="0" blue="0">
+      <Components>
+        <Digit x="160" y="0" transparency="1" valueType="Number" divisor="1" width="171" height="46" src0="0 Stabilize.png" src1="1 Acro.png" src2="2 AltHold.png" src3="3 Auto.png" src4="4 Guided.png" src5="5 Loiter.png" src6="6 RTL.png" src7="7 Circle.png" src8="NIX.png" src9="9 Land.png">
+          <Components>
+            <Bar x="0" y="0" width="171" height="46" minValue="10" maxValue="10" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+          </Components>
+          <Inputs>
+            <Input name="Value">Flightmode</Input>
+          </Inputs>
+        </Digit>
+        <Digit x="161" y="47" transparency="1" valueType="Number" divisor="1" width="171" height="46" src0="NIX.png" src1="11 Drift.png" src2="12 Sport.png" src3="NIX.png" src4="14 Flip.png" src5="15 Autotune.png" src6="16 PosHold.png" src7="17 Brake.png" src8="18 Throw.png" src9="19 Avoid ADSB.png">
+          <Components>
+            <Bar x="0" y="0" width="171" height="46" minValue="20" maxValue="20" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+            <Bar x="0" y="0" width="171" height="46" minValue="10" maxValue="9" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+          </Components>
+          <Inputs>
+            <Input name="Value">Flightmode</Input>
+          </Inputs>
+        </Digit>
+        <Digit x="161" y="94" transparency="1" valueType="Number" divisor="1" width="171" height="46" src0="20 Guide-NoGPS.png" src1="21 Smart-RTL.png" src2="22 FlowHold.png" src3="23 Follow.png" src4="24 ZigZag.png" src5="25 SysID.png" src6="26 AutoRotate.png" src7="NIX.png" src8="NIX.png" src9="NIX.png">
+          <Components>
+            <Bar x="0" y="0" width="171" height="46" minValue="20" maxValue="19" direction="LeftToRight" startTransparency="1" startRed="0" startGreen="0" startBlue="0" endTransparency="1" endRed="0" endGreen="0" endBlue="0">
+              <Inputs>
+                <Input name="Value">Flightmode</Input>
+              </Inputs>
+            </Bar>
+          </Components>
+          <Inputs>
+            <Input name="Value">Flightmode</Input>
+          </Inputs>
+        </Digit>
+        <Text x="17" y="21" text="FLT" fontRectWidth="97" fontRectHeight="53" fontFace="Arial" fontSize="30" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+        <Text x="-2" y="71" text="MODE" fontRectWidth="138" fontRectHeight="45" fontFace="Arial" fontSize="30" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+      </Components>
+    </FilledRectangle>
+  </Components>
+  <Inputs>
+    <Input category="Engine, Transmission" name="Flightmode" fromFastestLapSamePos="False">Flightmode</Input>
+  </Inputs>
+</Gauge>
