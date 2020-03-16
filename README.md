@@ -15,9 +15,9 @@ Tasks:
 
 [X] Convert above to imperial
 
-[ ] Basic Copter template and gauges - metric
+[X] Basic Copter template and gauges - metric
 
-[ ] Convert above to imperial
+[X] Convert above to imperial
 
 [X] RCIN/SERVO gauge
 
