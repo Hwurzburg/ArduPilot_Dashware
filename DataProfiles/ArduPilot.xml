@@ -350,6 +350,38 @@
     </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
+        <InputColumn>RCIN_C5</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_5</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C6</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C6</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C7</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C7</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCIN_C8</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCIN_C8</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
         <InputColumn>RCOU_C1</InputColumn>
       </InputColumns>
       <OutputColumns>
@@ -378,6 +410,38 @@
       </InputColumns>
       <OutputColumns>
         <OutputColumn>iRCOU_C4</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C5</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C5</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C6</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C6</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C7</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C7</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RCOU_C8</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRCOU_C8</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
   </Calculators>
@@ -417,9 +481,17 @@
     <ColumnMapping inputColumnText="iRCIN_C2" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC2" />
     <ColumnMapping inputColumnText="iRCIN_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC3" />
     <ColumnMapping inputColumnText="iRCIN_C4" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC4" />
+    <ColumnMapping inputColumnText="iRCIN_C5" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC5" />
+    <ColumnMapping inputColumnText="iRCIN_C6" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC6" />
+    <ColumnMapping inputColumnText="iRCIN_C7" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC7" />
+    <ColumnMapping inputColumnText="iRCIN_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC8" />
     <ColumnMapping inputColumnText="iRCOU_C1" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO1" />
     <ColumnMapping inputColumnText="iRCOU_C2" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO2" />
     <ColumnMapping inputColumnText="iRCOU_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO3" />
     <ColumnMapping inputColumnText="iRCOU_C4" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO4" />
+    <ColumnMapping inputColumnText="iRCOU_C5" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO5" />
+    <ColumnMapping inputColumnText="iRCOU_C6" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO6" />
+    <ColumnMapping inputColumnText="iRCOU_C7" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO7" />
+    <ColumnMapping inputColumnText="iRCOU_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO8" />
   </ColumnMappings>
 </DataProfile>
