@@ -444,6 +444,38 @@
         <OutputColumn>iRCOU_C8</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>NKF2_VWN</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iNKF2_VWN (m/s)</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>NKF2_VWE</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iNKF2_VWE (m/s)</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <SpeedConverter inputUnit="m/s" outputUnit="MPH">
+      <InputColumns>
+        <InputColumn>iNKF2_VWN (m/s)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iNKF2_VWN (mph)</OutputColumn>
+      </OutputColumns>
+    </SpeedConverter>
+    <SpeedConverter inputUnit="m/s" outputUnit="MPH">
+      <InputColumns>
+        <InputColumn>iNKF2_VWE (m/s)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iNKF2_VWE (mph)</OutputColumn>
+      </OutputColumns>
+    </SpeedConverter>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -493,5 +525,9 @@
     <ColumnMapping inputColumnText="iRCOU_C6" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO6" />
     <ColumnMapping inputColumnText="iRCOU_C7" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO7" />
     <ColumnMapping inputColumnText="iRCOU_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO8" />
+    <ColumnMapping inputColumnText="iNKF2_VWN (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (m/s)" />
+    <ColumnMapping inputColumnText="iNKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
+    <ColumnMapping inputColumnText="iNKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
+    <ColumnMapping inputColumnText="iNKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
   </ColumnMappings>
 </DataProfile>
