@@ -2,6 +2,12 @@
   <Category name="Positional">
     <DataType>Satellite HDop</DataType>
   </Category>
+  <Category name="Environment">
+    <DataType>Wind Speed EAST (m/s)</DataType>
+    <DataType>Wind Speed NORTH (m/s)</DataType>
+    <DataType>Wind Speed EAST (mph)</DataType>
+    <DataType>Wind Speed NORTH (mph)</DataType>
+  </Category>
   <Category name="Engine, Transmission">
     <DataType>Flightmode</DataType>
     <DataType>Battery Ampere</DataType>
