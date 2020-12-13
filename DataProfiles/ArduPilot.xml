@@ -55,7 +55,7 @@
     </DegreesToCartesianConverter>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
-        <InputColumn>CTUN_Aspd</InputColumn>
+        <InputColumn>CTUN_As</InputColumn>
       </InputColumns>
       <OutputColumns>
         <OutputColumn>iAirspeed (m/s)</OutputColumn>
@@ -218,7 +218,7 @@
     </UsePreviousValueCalculator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
-        <InputColumn>CTUN_ThrOut</InputColumn>
+        <InputColumn>CTUN_ThO</InputColumn>
       </InputColumns>
       <OutputColumns>
         <OutputColumn>iThrottle (%)</OutputColumn>
