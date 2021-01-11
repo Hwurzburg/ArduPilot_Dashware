@@ -7,20 +7,7 @@ Hopefully, once updated, other interested parties will contribute more guages an
 
 Example: https://youtu.be/mdaCKloMmdU
 
-Tasks:
-
-[X] Initial Rep setup...basic wiki
-
-[X] Basic Arduplane template and gauges - metric
-
-[X] Convert above to imperial
-
-[X] Basic Copter template and gauges - metric
-
-[X] Convert above to imperial
-
-[X] RCIN/SERVO gauge
 
 Thanks to Mark Whitehorn for his help in getting me up to speed on Dashware and other assistance
 
-# BE SURE TO CHECK OUT THE WIKI SECTION!
+# BE SURE TO CHECK OUT THE WIKI SECTION via Menu Above
