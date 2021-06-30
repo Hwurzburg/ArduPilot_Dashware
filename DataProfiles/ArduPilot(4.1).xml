@@ -476,6 +476,32 @@
         <OutputColumn>iNKF2_VWE (mph)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>ESC_Temp</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iESC_Temp</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <UsePreviousValueCalculator>
+      <InputColumns>
+        <InputColumn>ESC_RPM</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iESC_RPM</OutputColumn>
+      </OutputColumns>
+    </UsePreviousValueCalculator>
+    <MathCalculator mathOperation="Divide" parameter="1000" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iESC_RPM</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iESC_RPM (x1000)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -529,5 +555,7 @@
     <ColumnMapping inputColumnText="iNKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
     <ColumnMapping inputColumnText="iNKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
     <ColumnMapping inputColumnText="iNKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
+    <ColumnMapping inputColumnText="iESC_Temp" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Water Temperature (C)" />
+    <ColumnMapping inputColumnText="iESC_RPM (x1000)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
   </ColumnMappings>
 </DataProfile>
