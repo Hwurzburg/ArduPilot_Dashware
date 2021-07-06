@@ -446,34 +446,34 @@
     </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
-        <InputColumn>NKF2_VWN</InputColumn>
+        <InputColumn>XKF2_VWN</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWN (m/s)</OutputColumn>
+        <OutputColumn>iXKF2_VWN (m/s)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
-        <InputColumn>NKF2_VWE</InputColumn>
+        <InputColumn>XKF2_VWE</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWE (m/s)</OutputColumn>
+        <OutputColumn>iXKF2_VWE (m/s)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
     <SpeedConverter inputUnit="m/s" outputUnit="MPH">
       <InputColumns>
-        <InputColumn>iNKF2_VWN (m/s)</InputColumn>
+        <InputColumn>iXKF2_VWN (m/s)</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWN (mph)</OutputColumn>
+        <OutputColumn>iXKF2_VWN (mph)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
     <SpeedConverter inputUnit="m/s" outputUnit="MPH">
       <InputColumns>
-        <InputColumn>iNKF2_VWE (m/s)</InputColumn>
+        <InputColumn>iXKF2_VWE (m/s)</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWE (mph)</OutputColumn>
+        <OutputColumn>iXKF2_VWE (mph)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
@@ -551,10 +551,10 @@
     <ColumnMapping inputColumnText="iRCOU_C6" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO6" />
     <ColumnMapping inputColumnText="iRCOU_C7" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO7" />
     <ColumnMapping inputColumnText="iRCOU_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO8" />
-    <ColumnMapping inputColumnText="iNKF2_VWN (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (m/s)" />
-    <ColumnMapping inputColumnText="iNKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
-    <ColumnMapping inputColumnText="iNKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
-    <ColumnMapping inputColumnText="iNKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
+    <ColumnMapping inputColumnText="iXKF2_VWN (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (m/s)" />
+    <ColumnMapping inputColumnText="iXKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
+    <ColumnMapping inputColumnText="iXKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
+    <ColumnMapping inputColumnText="iXKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
     <ColumnMapping inputColumnText="iESC_Temp" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Water Temperature (C)" />
     <ColumnMapping inputColumnText="iESC_RPM (x1000)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
   </ColumnMappings>
