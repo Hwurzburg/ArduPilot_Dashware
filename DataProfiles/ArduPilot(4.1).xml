@@ -258,6 +258,25 @@
         <OutputColumn>iBAT_Curr</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
+    <MathCalculator mathOperation="Multiply" parameter="1000" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iBAT_Curr</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iBAT_Curr(mah)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="Divide" parameter="0" useConstantParameter="False">
+      <InputColumns>
+        <InputColumn>iBAT_Curr(mah)</InputColumn>
+        <InputColumn>iGroundSpeed (kph)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iEfficiency(mah/km)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
         <InputColumn>BAT_CurrTot</InputColumn>
@@ -653,5 +672,6 @@
     <ColumnMapping inputColumnText="iESC_RPM (x1000)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
     <ColumnMapping inputColumnText="iDistanceFromHome" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
     <ColumnMapping inputColumnText="iWindSpeed(m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed" />
+    <ColumnMapping inputColumnText="iEfficiency(mah/km)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Efficiency(mah/km)" />
   </ColumnMappings>
 </DataProfile>
