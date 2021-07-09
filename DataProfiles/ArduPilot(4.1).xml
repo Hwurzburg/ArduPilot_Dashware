@@ -258,6 +258,25 @@
         <OutputColumn>iBAT_Curr</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
+    <MathCalculator mathOperation="Multiply" parameter="1000" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iBAT_Curr</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iBAT_Curr(mah)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="Divide" parameter="0" useConstantParameter="False">
+      <InputColumns>
+        <InputColumn>iBAT_Curr(mah)</InputColumn>
+        <InputColumn>iGroundSpeed (kph)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iEfficiency(mah/km)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
         <InputColumn>BAT_CurrTot</InputColumn>
@@ -446,36 +465,156 @@
     </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
-        <InputColumn>NKF2_VWN</InputColumn>
+        <InputColumn>XKF2_VWN</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWN (m/s)</OutputColumn>
+        <OutputColumn>iXKF2_VWN (m/s)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
-        <InputColumn>NKF2_VWE</InputColumn>
+        <InputColumn>XKF2_VWE</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWE (m/s)</OutputColumn>
+        <OutputColumn>iXKF2_VWE (m/s)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
     <SpeedConverter inputUnit="m/s" outputUnit="MPH">
       <InputColumns>
-        <InputColumn>iNKF2_VWN (m/s)</InputColumn>
+        <InputColumn>iXKF2_VWN (m/s)</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWN (mph)</OutputColumn>
+        <OutputColumn>iXKF2_VWN (mph)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
     <SpeedConverter inputUnit="m/s" outputUnit="MPH">
       <InputColumns>
-        <InputColumn>iNKF2_VWE (m/s)</InputColumn>
+        <InputColumn>iXKF2_VWE (m/s)</InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iNKF2_VWE (mph)</OutputColumn>
+        <OutputColumn>iXKF2_VWE (mph)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>ESC_Temp</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iESC_Temp</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <UsePreviousValueCalculator>
+      <InputColumns>
+        <InputColumn>ESC_RPM</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iESC_RPM</OutputColumn>
+      </OutputColumns>
+    </UsePreviousValueCalculator>
+    <MathCalculator mathOperation="Divide" parameter="1000" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iESC_RPM</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iESC_RPM (x1000)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>XKF1_PE</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF1_PE</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <MathCalculator mathOperation="Exponent" parameter="2" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iXKF1_PE</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF1_PE(square)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>XKF1_PN</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF1_PN</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <MathCalculator mathOperation="Exponent" parameter="2" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iXKF1_PN</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF1_PN(square)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="Add" parameter="0" useConstantParameter="False">
+      <InputColumns>
+        <InputColumn>iXKF1_PE(square)</InputColumn>
+        <InputColumn>iXKF1_PN(square)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF1_P(sum)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="SquareRoot" parameter="0" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iXKF1_P(sum)</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iDistanceFromHome</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="Exponent" parameter="2" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iXKF2_VWN (m/s)</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF2_VWN(square)(m/s)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="Exponent" parameter="2" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iXKF2_VWE (m/s)</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF2_VWE(square)(m/s)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="Add" parameter="0" useConstantParameter="False">
+      <InputColumns>
+        <InputColumn>iXKF2_VWN(square)(m/s)</InputColumn>
+        <InputColumn>iXKF2_VWE(square)(m/s)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iXKF2_VW(sum)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <MathCalculator mathOperation="SquareRoot" parameter="0" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iXKF2_VW(sum)</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iWindSpeed(m/s)</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -525,9 +664,14 @@
     <ColumnMapping inputColumnText="iRCOU_C6" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO6" />
     <ColumnMapping inputColumnText="iRCOU_C7" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO7" />
     <ColumnMapping inputColumnText="iRCOU_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO8" />
-    <ColumnMapping inputColumnText="iNKF2_VWN (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (m/s)" />
-    <ColumnMapping inputColumnText="iNKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
-    <ColumnMapping inputColumnText="iNKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
-    <ColumnMapping inputColumnText="iNKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
+    <ColumnMapping inputColumnText="iXKF2_VWN (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (m/s)" />
+    <ColumnMapping inputColumnText="iXKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
+    <ColumnMapping inputColumnText="iXKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
+    <ColumnMapping inputColumnText="iXKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
+    <ColumnMapping inputColumnText="iESC_Temp" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Water Temperature (C)" />
+    <ColumnMapping inputColumnText="iESC_RPM (x1000)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
+    <ColumnMapping inputColumnText="iDistanceFromHome" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
+    <ColumnMapping inputColumnText="iWindSpeed(m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed" />
+    <ColumnMapping inputColumnText="iEfficiency(mah/km)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Efficiency(mah/km)" />
   </ColumnMappings>
 </DataProfile>
