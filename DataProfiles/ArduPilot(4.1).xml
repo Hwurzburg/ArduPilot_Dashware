@@ -615,6 +615,32 @@
         <OutputColumn>iWindSpeed(m/s)</OutputColumn>
       </OutputColumns>
     </MathCalculator>
+        <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>RSSI_RXRSSI</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRSSI_RXRSSI_RAW</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
+    <MathCalculator mathOperation="Multiply" parameter="100" useConstantParameter="True">
+      <InputColumns>
+        <InputColumn>iRSSI_RXRSSI_RAW</InputColumn>
+        <InputColumn>
+        </InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iRSSI_RXRSSI_SCALED</OutputColumn>
+      </OutputColumns>
+    </MathCalculator>
+    <LinearInterpolator filterValues="False" standardDevCeiling="5">
+      <InputColumns>
+        <InputColumn>GPS_Alt</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iGPS_Alt</OutputColumn>
+      </OutputColumns>
+    </LinearInterpolator>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -627,6 +653,7 @@
     <ColumnMapping inputColumnText="iAirspeed (kph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Air Speed (KPH)" />
     <ColumnMapping inputColumnText="iAltitude (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Ground-Based Altitude (Meters)" />
     <ColumnMapping inputColumnText="iAltitude (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Ground-Based Altitude (Feet)" />
+    <ColumnMapping inputColumnText="iGPS_Alt" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Altitude / Z Position (Meters)" />
     <ColumnMapping inputColumnText="iNumSats" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Satellite Count" />
     <ColumnMapping inputColumnText="iTotalDistance (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Feet)" />
     <ColumnMapping inputColumnText="iTotalDistance (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Meters)" />
@@ -673,5 +700,6 @@
     <ColumnMapping inputColumnText="iDistanceFromHome" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
     <ColumnMapping inputColumnText="iWindSpeed(m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed" />
     <ColumnMapping inputColumnText="iEfficiency(mah/km)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Efficiency(mah/km)" />
+    <ColumnMapping inputColumnText="iRSSI_RXRSSI_SCALED" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RSSI" />
   </ColumnMappings>
 </DataProfile>
