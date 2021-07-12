@@ -1,0 +1,184 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="1897.919" height="138.3899" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledRectangle x="0" y="0" width="1900" height="144" roundCorners="False" cornerRadius="14.4" transparency="0.1294118" red="255" green="255" blue="255" />
+    <DynamicText x="-7.24151" y="74.12595" displayType="Running Time" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="168.0449" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Data Running Time, Seconds</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="0" y="11.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="True" restrictedMinValue="0" restrictedMaxValue="99" convertFromGMT="True" fontRectWidth="69.19496" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">RSSI</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="1482.609" y="75.12595" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="126.5279" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Battery Ampere</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="992.798" y="75.52866" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="128.5049" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Altitude / Z Position (Meters)</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="554.8875" y="15.12595" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="128.5049" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Distance from Beginning (Meters)</Input>
+      </Inputs>
+    </DynamicText>
+    <FilledRectangle x="68.61322" y="31.23565" width="6.166131" height="19.26916" roundCorners="False" cornerRadius="0.5533706" transparency="0.5450981" red="19" green="17" blue="17" />
+    <FilledRectangle x="76.70626" y="38.94331" width="5.780748" height="11.5615" roundCorners="False" cornerRadius="0.4099667" transparency="0.5450981" red="19" green="17" blue="17" />
+    <DynamicText x="239.5291" y="12.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="118.6199" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Air Speed (KPH)</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="1760.056" y="11.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="98.84995" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Throttle Position</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="119.6084" y="11.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="79.07996" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Satellite Count</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="801.9373" y="74.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="128.5049" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Ground-Based Altitude (Meters)</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="1142.244" y="11.86199" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="126.5279" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Battery Voltage</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="9.884994" y="0.9884996" width="83.03396" height="9.884995" minValue="1" maxValue="99" direction="LeftToRight" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">RSSI</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="1173.876" y="0.9884996" width="105.7694" height="9.884995" minValue="14" maxValue="16" direction="RightToLeft" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">Battery Voltage</Input>
+      </Inputs>
+    </Bar>
+    <FilledRectangle x="84.79932" y="43.9533" width="6.166131" height="6.551515" roundCorners="False" cornerRadius="0.2478022" transparency="0.5450981" red="19" green="17" blue="17" />
+    <DynamicText x="782.9575" y="11.86199" displayType="Decimal" decimalPrecision="1" showPlus="True" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="148.2749" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Vertical Speed (m/s)</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="884.7729" y="0.9884996" width="79.07996" height="9.884995" minValue="0" maxValue="10" direction="LeftToRight" startTransparency="1" startRed="44" startGreen="198" startBlue="81" endTransparency="1" endRed="44" endGreen="198" endBlue="81">
+      <Inputs>
+        <Input name="Value">Vertical Speed (m/s)</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="805.693" y="0.9884996" width="79.07996" height="9.884995" minValue="0" maxValue="-10" direction="RightToLeft" startTransparency="1" startRed="245" startGreen="176" startBlue="32" endTransparency="1" endRed="245" endGreen="176" endBlue="32">
+      <Inputs>
+        <Input name="Value">Vertical Speed (m/s)</Input>
+      </Inputs>
+    </Bar>
+    <DynamicText x="553.4149" y="77.12595" displayType="Integer" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="128.5049" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Distance (Meters)</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="1338.955" y="11.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="126.5279" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Fuel Used</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="1764" y="0.9884996" width="126.5279" height="9.884995" minValue="1" maxValue="100" direction="RightToLeft" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">Throttle Position</Input>
+      </Inputs>
+    </Bar>
+    <DynamicText x="1308.955" y="75.12595" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="True" restrictedMinValue="0" restrictedMaxValue="999" convertFromGMT="True" fontRectWidth="126.5279" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">INAV_MAHKM</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="1344.541" y="63.26397" width="126.5279" height="9.884995" minValue="10" maxValue="300" direction="RightToLeft" startTransparency="1" startRed="79" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">INAV_MAHKM</Input>
+      </Inputs>
+    </Bar>
+    <DynamicText x="1745.746" y="75.12595" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="110" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Engine RPM</Input>
+      </Inputs>
+    </DynamicText>
+    <Text x="193.7459" y="10.87349" text="SAT" fontRectWidth="79.07996" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="927.4767" y="73.87349" text="ALT/H M" fontRectWidth="61.28697" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1119.326" y="74.54015" text="ALT/S M" fontRectWidth="61.28697" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="928.267" y="11.86199" text="VAR M/S" fontRectWidth="46.45948" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="680.4269" y="15.12595" text="DIS M" fontRectWidth="52.39047" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="679.9429" y="77.12595" text="TOT M" fontRectWidth="49.42497" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1461.529" y="10.87349" text="MAH" fontRectWidth="46.45948" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1431.529" y="75.12595" text="MAH /KM" fontRectWidth="46.45948" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1265.806" y="10.87349" text="V" fontRectWidth="46.45948" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="353.2061" y="11.87349" text="AIR KM/H" fontRectWidth="55.35597" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1854.952" y="10.87349" text="%TH" fontRectWidth="55.35597" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1854.952" y="75.12595" text="K&#xD;&#xA;RPM" fontRectWidth="55.35597" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="1603.206" y="73.14896" text="A" fontRectWidth="46.45948" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Bar x="1761" y="63.26397" width="130" height="9.884995" minValue="0" maxValue="13" direction="RightToLeft" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">Engine RPM</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="276" y="1.988503" width="125" height="9.884995" minValue="1" maxValue="180" direction="RightToLeft" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">Air Speed (KPH)</Input>
+      </Inputs>
+    </Bar>
+    <DynamicText x="1635" y="75.12595" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="80" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Water Temperature (C)</Input>
+      </Inputs>
+    </DynamicText>
+    <Text x="1708.206" y="73.14896" text="°C" fontRectWidth="46.45948" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <Text x="351.2061" y="80.87349" text="WIND KM/H" fontRectWidth="55.35597" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <DynamicText x="235.5291" y="80.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="118.6199" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Wind Speed</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="276" y="70.9885" width="125" height="9.884995" minValue="1" maxValue="180" direction="RightToLeft" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">Wind Speed</Input>
+      </Inputs>
+    </Bar>
+    <Text x="520.2061" y="15.87349" text="GND KM/H" fontRectWidth="55.35597" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="12.85049" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="bottom" fontTransparency="1" fontRed="20" fontGreen="20" fontBlue="20" />
+    <DynamicText x="383.5291" y="12.86199" displayType="Decimal" decimalPrecision="0" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="118.6199" fontRectHeight="45.47098" fontFace="Segoe UI" fontSize="35.58598" fontBold="False" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="0" fontGreen="0" fontBlue="0">
+      <Inputs>
+        <Input name="Value">Speed (KPH)</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="438" y="-0.01149702" width="125" height="9.884995" minValue="1" maxValue="180" direction="RightToLeft" startTransparency="1" startRed="80" startGreen="81" startBlue="81" endTransparency="1" endRed="73" endGreen="154" endBlue="253">
+      <Inputs>
+        <Input name="Value">Speed (KPH)</Input>
+      </Inputs>
+    </Bar>
+  </Components>
+  <Inputs>
+    <Input category="Generic" name="Other" fromFastestLapSamePos="False">Data Running Time, Seconds</Input>
+    <Input category="Generic" name="Other" fromFastestLapSamePos="False">INAV_MAHKM</Input>
+    <Input category="RCIN,SERVO" name="RSSI" fromFastestLapSamePos="False">RSSI</Input>
+    <Input category="Positional" name="Satellite Count" fromFastestLapSamePos="False">Satellite Count</Input>
+    <Input category="Steering, Throttle, Brakes" name="Throttle Position" fromFastestLapSamePos="False">Throttle Position</Input>
+    <Input category="Engine, Transmission" name="Battery Ampere" fromFastestLapSamePos="False">Battery Ampere</Input>
+    <Input category="Engine, Transmission" name="Fuel Used" fromFastestLapSamePos="False">Fuel Used</Input>
+    <Input category="Engine, Transmission" name="Battery Voltage" fromFastestLapSamePos="False">Battery Voltage</Input>
+    <Input category="Positional" name="Ground-Based Altitude (Meters)" fromFastestLapSamePos="False">Ground-Based Altitude (Meters)</Input>
+    <Input category="Positional" name="Altitude / Z Position (Meters)" fromFastestLapSamePos="False">Altitude / Z Position (Meters)</Input>
+    <Input category="Velocity" name="Vertical Speed (m/s)" fromFastestLapSamePos="False">Vertical Speed (m/s)</Input>
+    <Input category="Velocity" name="Air Speed (KPH)" fromFastestLapSamePos="False">Air Speed (KPH)</Input>
+    <Input category="Positional" name="Distance from Beginning (Meters)" fromFastestLapSamePos="False">Distance from Beginning (Meters)</Input>
+    <Input category="Positional" name="Distance (Meters)" fromFastestLapSamePos="False">Distance (Meters)</Input>
+    <Input category="Engine, Transmission" name="Engine RPM" fromFastestLapSamePos="False">Engine RPM</Input>
+    <Input category="Engine, Transmission" name="Water Temperature (C)" fromFastestLapSamePos="False">Water Temperature (C)</Input>
+    <Input category="Environment" name="Wind Speed" fromFastestLapSamePos="False">Wind Speed</Input>
+    <Input category="Velocity" name="Speed (KPH)" fromFastestLapSamePos="False">Speed (KPH)</Input>
+  </Inputs>
+</Gauge>

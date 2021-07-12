@@ -1,0 +1,23 @@
+<Gauge version="3" x="-116.5306" y="155.5587" readOnly="False" width="439.3399" height="304.8596" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledEllipse x="196.7554" y="130.386" horizontalRadius="62.6267" verticalRadius="62.6267" transparency="0.427451" red="60" green="55" blue="55">
+      <Components>
+        <Ellipse x="6.866455E-05" y="0" horizontalRadius="63.67047" verticalRadius="63.67047" penWidth="3.131334" transparency="1" red="126" green="109" blue="109" />
+        <Ellipse x="1.525879E-05" y="-2.288818E-05" horizontalRadius="65.75805" verticalRadius="65.75805" penWidth="3.131334" transparency="1" red="68" green="65" blue="65" />
+        <GPlot x="0" y="-1.144409E-05" radius="59.34961" maxG="10" flipXAxis="False" flipYAxis="True" minorUnit="2.5" majorUnit="5" ballRadius="3.190839" showTail="True" tailDuration="1" tailStartRadius="3.190839" tailEndRadius="0.6381676" axesPenWidth="1.276335" axesTransparency="1" axesRed="255" axesGreen="255" axesBlue="255" minorPenWidth="0.6381676" minorTransparency="0.4901961" minorRed="255" minorGreen="255" minorBlue="255" majorPenWidth="2.042137" majorTransparency="1" majorRed="255" majorGreen="255" majorBlue="255" stickPenWidth="1.914503" stickTransparency="1" stickRed="112" stickGreen="16" stickBlue="9" ballTransparency="1" ballRed="255" ballGreen="0" ballBlue="0" tailStartTransparency="1" tailStartRed="255" tailStartGreen="255" tailStartBlue="0" tailEndTransparency="0.3921569" tailEndRed="139" tailEndGreen="0" tailEndBlue="0" fontFace="Arial" fontSize="7.019847" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+          <Components>
+            <Text x="-17.23054" y="-89.9816" text="N" fontRectWidth="33.18472" fontRectHeight="22.97404" fontFace="Arial" fontSize="13.40152" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="center" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+          </Components>
+          <Inputs>
+            <Input name="Lateral G">Wind Speed EAST (m/s)</Input>
+            <Input name="Acceleration G">Wind Speed NORTH (m/s)</Input>
+          </Inputs>
+        </GPlot>
+      </Components>
+    </FilledEllipse>
+  </Components>
+  <Inputs>
+    <Input category="Environment" name="Wind Speed NORTH (m/s)" fromFastestLapSamePos="False">Wind Speed NORTH (m/s)</Input>
+    <Input category="Environment" name="Wind Speed EAST (m/s)" fromFastestLapSamePos="False">Wind Speed EAST (m/s)</Input>
+  </Inputs>
+</Gauge>
