@@ -649,6 +649,14 @@
         <OutputColumn>iGPS_Alt</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
+      <SpeedConverter inputUnit="m/s" outputUnit="KPH">
+      <InputColumns>
+        <InputColumn>iWindSpeed(m/s)</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iWindSpeed(kph)</OutputColumn>
+      </OutputColumns>
+    </SpeedConverter>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -707,7 +715,7 @@
     <ColumnMapping inputColumnText="iESC_RPM (x1000)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
     <ColumnMapping inputColumnText="iESC_Curr" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="ESC Ampere" />
     <ColumnMapping inputColumnText="iDistanceFromHome" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
-    <ColumnMapping inputColumnText="iWindSpeed(m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed" />
+    <ColumnMapping inputColumnText="iWindSpeed(kph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed" />
     <ColumnMapping inputColumnText="iEfficiency(mah/km)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Efficiency(mah/km)" />
     <ColumnMapping inputColumnText="iRSSI_RXRSSI_SCALED" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RSSI" />
   </ColumnMappings>
