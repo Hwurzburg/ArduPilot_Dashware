@@ -1,0 +1,34 @@
+<Gauge version="3" x="-14.40813" y="805.2859" readOnly="False" width="338.4448" height="307.0742" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <Map x="14.40565" y="20.66895" width="299.6122" height="260.0993" align="Left" vAlign="Top" EvenPenWidth="3" EvenTransparency="1" EvenRed="0" EvenGreen="0" EvenBlue="0" OddPenWidth="1" OddTransparency="1" OddRed="32" OddGreen="31" OddBlue="31">
+      <Inputs>
+        <Input name="X">Longitude / X Position (Feet)</Input>
+        <Input name="Y">Latitude / Y Position (Feet)</Input>
+      </Inputs>
+    </Map>
+    <Map x="21.29529" y="26.93231" width="292.0963" height="246.32" align="Left" vAlign="Top" EvenPenWidth="3" EvenTransparency="1" EvenRed="0" EvenGreen="174" EvenBlue="239" OddPenWidth="1" OddTransparency="1" OddRed="0" OddGreen="174" OddBlue="239">
+      <Components>
+        <MapDot x="-4.768372E-07" y="0" radius="8.719296" transparency="1" red="0" green="0" blue="0">
+          <Inputs>
+            <Input name="X">Longitude / X Position (Feet)</Input>
+            <Input name="Y">Latitude / Y Position (Feet)</Input>
+          </Inputs>
+        </MapDot>
+        <MapDot x="-4.768372E-07" y="0" radius="6.639747" transparency="1" red="255" green="255" blue="255">
+          <Inputs>
+            <Input name="X">Longitude / X Position (Feet)</Input>
+            <Input name="Y">Latitude / Y Position (Feet)</Input>
+          </Inputs>
+        </MapDot>
+      </Components>
+      <Inputs>
+        <Input name="X">Longitude / X Position (Feet)</Input>
+        <Input name="Y">Latitude / Y Position (Feet)</Input>
+      </Inputs>
+    </Map>
+  </Components>
+  <Inputs>
+    <Input category="Positional" name="Longitude / X Position (Feet)" fromFastestLapSamePos="False">Longitude / X Position (Feet)</Input>
+    <Input category="Positional" name="Latitude / Y Position (Feet)" fromFastestLapSamePos="False">Latitude / Y Position (Feet)</Input>
+  </Inputs>
+</Gauge>
