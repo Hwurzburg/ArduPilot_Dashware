@@ -7,13 +7,17 @@
     <DataType>Wind Speed NORTH (m/s)</DataType>
     <DataType>Wind Speed EAST (mph)</DataType>
     <DataType>Wind Speed NORTH (mph)</DataType>
+    <DataType>Wind Speed</DataType>
   </Category>
   <Category name="Engine, Transmission">
     <DataType>Flightmode</DataType>
     <DataType>Battery Ampere</DataType>
+    <DataType>Efficiency(mah/km)</DataType>
   </Category>
   <Category name="Generic">
     <DataType>RCIN1</DataType>
+    <DataType>Tune_Value</DataType>
+    <DataType>Message</DataType>
   </Category>
   <Category name="RCIN,SERVO">
     <DataType>RC1</DataType>
@@ -32,5 +36,6 @@
     <DataType>SERVO6</DataType>
     <DataType>SERVO7</DataType>
     <DataType>SERVO8</DataType>
+    <DataType>RSSI</DataType>
   </Category>
 </DataTypes>
