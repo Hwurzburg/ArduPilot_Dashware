@@ -1,11 +1,11 @@
-<Gauge version="3" x="1749.479" y="88.75821" readOnly="False" width="170.8402" height="173.3525" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+<Gauge version="3" x="1762.464" y="57.33237" readOnly="False" width="177.3401" height="179.948" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
   <Components>
-    <ImageNeedle x="81.86013" y="81.86002" transparency="1" width="181.9112" height="181.9112" src="outer_ring.png" axisX="90.95559" axisY="90.95559" loop="False" syncValueRangeWithParent="False" syncAngleRangeWithParent="False" autoMinValue="False" restrictMinValue="False" lowestMinValue="0" highestMinValue="100" minValue="0" autoMaxValue="False" restrictMaxValue="False" lowestMaxValue="10" highestMaxValue="1000000" maxValue="360" minAngle="0" maxAngle="360">
+    <ImageNeedle x="84.97469" y="84.97454" transparency="1" width="188.8324" height="188.8324" src="outer_ring.png" axisX="94.41615" axisY="94.41615" loop="False" syncValueRangeWithParent="False" syncAngleRangeWithParent="False" autoMinValue="False" restrictMinValue="False" lowestMinValue="0" highestMinValue="100" minValue="0" autoMaxValue="False" restrictMaxValue="False" lowestMaxValue="10" highestMaxValue="1000000" maxValue="360" minAngle="0" maxAngle="360">
       <Inputs>
         <Input name="Value">Heading</Input>
       </Inputs>
     </ImageNeedle>
-    <Image x="27.28662" y="28.19624" transparency="1" src="PBJCompassRosesmall (5).png" width="109.1467" height="109.1467" />
+    <Image x="28.32495" y="29.26901" transparency="1" src="PBJCompassRosesmall (5).png" width="113.2994" height="113.2994" />
   </Components>
   <Inputs>
     <Input category="Positional" name="Heading" fromFastestLapSamePos="False">Heading</Input>
