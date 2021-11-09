@@ -61,14 +61,6 @@
         <OutputColumn>iAirspeed (m/s)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
-    <SpeedConverter inputUnit="m/s" outputUnit="MPH">
-      <InputColumns>
-        <InputColumn>iAirspeed (m/s)</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iAirspeed (MPH)</OutputColumn>
-      </OutputColumns>
-    </SpeedConverter>
     <SpeedConverter inputUnit="m/s" outputUnit="KPH">
       <InputColumns>
         <InputColumn>iAirspeed (m/s)</InputColumn>
@@ -85,14 +77,6 @@
         <OutputColumn>iAltitude (m)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
-    <DistanceConverter inputUnit="Meters" outputUnit="Feet">
-      <InputColumns>
-        <InputColumn>iAltitude (m)</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iAltitude (feet)</OutputColumn>
-      </OutputColumns>
-    </DistanceConverter>
     <UsePreviousValueCalculator>
       <InputColumns>
         <InputColumn>GPS_NSats</InputColumn>
@@ -118,14 +102,16 @@
         <OutputColumn>iTotalDistance (m)</OutputColumn>
       </OutputColumns>
     </DistanceConverter>
-    <DistanceConverter inputUnit="Feet" outputUnit="Miles">
+    <MathCalculator mathOperation="Divide" parameter="2" useConstantParameter="True">
       <InputColumns>
-        <InputColumn>iTotalDistance (feet)</InputColumn>
+        <InputColumn>iTotalDistance (m)</InputColumn>
+        <InputColumn>
+        </InputColumn>
       </InputColumns>
       <OutputColumns>
-        <OutputColumn>iTotalDistance (miles)</OutputColumn>
+        <OutputColumn>iTotalDistance (m/2)</OutputColumn>
       </OutputColumns>
-    </DistanceConverter>
+    </MathCalculator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
         <InputColumn>ATT_Roll</InputColumn>
@@ -192,14 +178,6 @@
         <OutputColumn>iGroundSpeed (m/s)</OutputColumn>
       </OutputColumns>
     </MathCalculator>
-    <SpeedConverter inputUnit="m/s" outputUnit="MPH">
-      <InputColumns>
-        <InputColumn>iGroundSpeed (m/s)</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iGroundSpeed (mph)</OutputColumn>
-      </OutputColumns>
-    </SpeedConverter>
     <SpeedConverter inputUnit="m/s" outputUnit="KPH">
       <InputColumns>
         <InputColumn>iGroundSpeed (m/s)</InputColumn>
@@ -285,33 +263,7 @@
         <OutputColumn>iBAT_CurrTot</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
-    <LinearInterpolator filterValues="False" standardDevCeiling="5">
-      <InputColumns>
-        <InputColumn>Home_Dist</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iHomeDistance</OutputColumn>
-      </OutputColumns>
-    </LinearInterpolator>
-    <DistanceConverter inputUnit="Meters" outputUnit="Feet">
-      <InputColumns>
-        <InputColumn>iHomeDistance</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iHomeDistance(feet)</OutputColumn>
-      </OutputColumns>
-    </DistanceConverter>
-    <AveragingCalculator parameter="0.5" mode="Simple" direction="Backwards and Forwards">
-      <InputColumns>
-        <InputColumn>
-        </InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>
-        </OutputColumn>
-      </OutputColumns>
-    </AveragingCalculator>
-    <LinearInterpolator filterValues="False" standardDevCeiling="4">
+    <LinearInterpolator filterValues="False" standardDevCeiling="2.000001">
       <InputColumns>
         <InputColumn>BARO_CRt</InputColumn>
       </InputColumns>
@@ -327,14 +279,6 @@
         <OutputColumn>aBARO_CRt</OutputColumn>
       </OutputColumns>
     </AveragingCalculator>
-    <SpeedConverter inputUnit="m/s" outputUnit="FPM">
-      <InputColumns>
-        <InputColumn>aBARO_CRt</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>aBARO_CRt (fpm)</OutputColumn>
-      </OutputColumns>
-    </SpeedConverter>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
         <InputColumn>RCIN_C1</InputColumn>
@@ -479,30 +423,6 @@
         <OutputColumn>iXKF2_VWE (m/s)</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
-    <SpeedConverter inputUnit="m/s" outputUnit="MPH">
-      <InputColumns>
-        <InputColumn>iXKF2_VWN (m/s)</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iXKF2_VWN (mph)</OutputColumn>
-      </OutputColumns>
-    </SpeedConverter>
-    <SpeedConverter inputUnit="m/s" outputUnit="MPH">
-      <InputColumns>
-        <InputColumn>iXKF2_VWE (m/s)</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iXKF2_VWE (mph)</OutputColumn>
-      </OutputColumns>
-    </SpeedConverter>
-     <LinearInterpolator filterValues="False" standardDevCeiling="5">
-      <InputColumns>
-        <InputColumn>ESC_Curr</InputColumn>
-      </InputColumns>
-      <OutputColumns>
-        <OutputColumn>iESC_Curr</OutputColumn>
-      </OutputColumns>
-    </LinearInterpolator>
     <LinearInterpolator filterValues="False" standardDevCeiling="5">
       <InputColumns>
         <InputColumn>ESC_Temp</InputColumn>
@@ -623,7 +543,7 @@
         <OutputColumn>iWindSpeed(m/s)</OutputColumn>
       </OutputColumns>
     </MathCalculator>
-        <LinearInterpolator filterValues="False" standardDevCeiling="5">
+    <LinearInterpolator filterValues="True" standardDevCeiling="2">
       <InputColumns>
         <InputColumn>RSSI_RXRSSI</InputColumn>
       </InputColumns>
@@ -649,7 +569,7 @@
         <OutputColumn>iGPS_Alt</OutputColumn>
       </OutputColumns>
     </LinearInterpolator>
-      <SpeedConverter inputUnit="m/s" outputUnit="KPH">
+    <SpeedConverter inputUnit="m/s" outputUnit="KPH">
       <InputColumns>
         <InputColumn>iWindSpeed(m/s)</InputColumn>
       </InputColumns>
@@ -657,6 +577,14 @@
         <OutputColumn>iWindSpeed(kph)</OutputColumn>
       </OutputColumns>
     </SpeedConverter>
+    <UsePreviousValueCalculator>
+      <InputColumns>
+        <InputColumn>PRTN_Value</InputColumn>
+      </InputColumns>
+      <OutputColumns>
+        <OutputColumn>iTune_Value</OutputColumn>
+      </OutputColumns>
+    </UsePreviousValueCalculator>
   </Calculators>
   <ColumnMappings>
     <ColumnMapping inputColumnText="iTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
@@ -665,21 +593,18 @@
     <ColumnMapping inputColumnText="GPS_iLon (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Longitude / X Position (Feet)" />
     <ColumnMapping inputColumnText="GPS_iLat (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Latitude / Y Position (Feet)" />
     <ColumnMapping inputColumnText="iAirspeed (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Air Speed (m/s)" />
-    <ColumnMapping inputColumnText="iAirspeed (MPH)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Air Speed (MPH)" />
     <ColumnMapping inputColumnText="iAirspeed (kph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Air Speed (KPH)" />
     <ColumnMapping inputColumnText="iAltitude (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Ground-Based Altitude (Meters)" />
     <ColumnMapping inputColumnText="iAltitude (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Ground-Based Altitude (Feet)" />
     <ColumnMapping inputColumnText="iGPS_Alt" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Altitude / Z Position (Meters)" />
     <ColumnMapping inputColumnText="iNumSats" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Satellite Count" />
     <ColumnMapping inputColumnText="iTotalDistance (feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Feet)" />
-    <ColumnMapping inputColumnText="iTotalDistance (m)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Meters)" />
-    <ColumnMapping inputColumnText="iTotalDistance (miles)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Miles)" />
+    <ColumnMapping inputColumnText="iTotalDistance (m/2)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance (Meters)" />
     <ColumnMapping inputColumnText="iRoll" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Roll" />
     <ColumnMapping inputColumnText="iPitch" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Pitch" />
     <ColumnMapping inputColumnText="iYaw" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Yaw" />
     <ColumnMapping inputColumnText="iYaw" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Heading" />
     <ColumnMapping inputColumnText="iGroundSpeed (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Speed (m/s)" />
-    <ColumnMapping inputColumnText="iGroundSpeed (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Speed (MPH)" />
     <ColumnMapping inputColumnText="iGroundSpeed (kph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Speed (KPH)" />
     <ColumnMapping inputColumnText="CurrentMode" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Flightmode" />
     <ColumnMapping inputColumnText="iThrottle (%)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Steering, Throttle, Brakes" dataType="Throttle Position" />
@@ -687,18 +612,7 @@
     <ColumnMapping inputColumnText="iGPS_HDop" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Satellite HDop" />
     <ColumnMapping inputColumnText="iBAT_Curr" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Battery Ampere" />
     <ColumnMapping inputColumnText="iBAT_CurrTot" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Fuel Used" />
-    <ColumnMapping inputColumnText="iHomeDistance" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
-    <ColumnMapping inputColumnText="iHomeDistance(feet)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Feet)" />
     <ColumnMapping inputColumnText="aBARO_CRt" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (m/s)" />
-    <ColumnMapping inputColumnText="aBARO_CRt (fpm)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Velocity" dataType="Vertical Speed (FPM)" />
-    <ColumnMapping inputColumnText="iRCIN_C1" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC1" />
-    <ColumnMapping inputColumnText="iRCIN_C2" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC2" />
-    <ColumnMapping inputColumnText="iRCIN_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC3" />
-    <ColumnMapping inputColumnText="iRCIN_C4" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC4" />
-    <ColumnMapping inputColumnText="iRCIN_C5" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC5" />
-    <ColumnMapping inputColumnText="iRCIN_C6" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC6" />
-    <ColumnMapping inputColumnText="iRCIN_C7" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC7" />
-    <ColumnMapping inputColumnText="iRCIN_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC8" />
     <ColumnMapping inputColumnText="iRCOU_C1" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO1" />
     <ColumnMapping inputColumnText="iRCOU_C2" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO2" />
     <ColumnMapping inputColumnText="iRCOU_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO3" />
@@ -709,14 +623,13 @@
     <ColumnMapping inputColumnText="iRCOU_C8" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="SERVO8" />
     <ColumnMapping inputColumnText="iXKF2_VWN (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (m/s)" />
     <ColumnMapping inputColumnText="iXKF2_VWE (m/s)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (m/s)" />
-    <ColumnMapping inputColumnText="iXKF2_VWN (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed NORTH (mph)" />
-    <ColumnMapping inputColumnText="iXKF2_VWE (mph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed EAST (mph)" />
     <ColumnMapping inputColumnText="iESC_Temp" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Water Temperature (C)" />
     <ColumnMapping inputColumnText="iESC_RPM (x1000)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Engine RPM" />
-    <ColumnMapping inputColumnText="iESC_Curr" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="ESC Ampere" />
     <ColumnMapping inputColumnText="iDistanceFromHome" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Positional" dataType="Distance from Beginning (Meters)" />
     <ColumnMapping inputColumnText="iWindSpeed(kph)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Environment" dataType="Wind Speed" />
     <ColumnMapping inputColumnText="iEfficiency(mah/km)" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Engine, Transmission" dataType="Efficiency(mah/km)" />
     <ColumnMapping inputColumnText="iRSSI_RXRSSI_SCALED" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RSSI" />
+    <ColumnMapping inputColumnText="iTune_Value" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Generic" dataType="Tune_Value" />
+    <ColumnMapping inputColumnText="MSG_Message" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Generic" dataType="Message" />
   </ColumnMappings>
 </DataProfile>
