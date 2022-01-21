@@ -1,0 +1,19 @@
+<DataProfile version="2" readOnly="False" startFinishDistanceThreshold="40" showDistanceThreshold="True" ignoreFirstLap="True" ignoreLastLap="True" lapTimeHoldSecs="5" isChaseCamData="False" isAimData="False" isDriftBoxData="False" sortByTime="False" autoSync="True" autoSyncOffset="0">
+  <HeaderLines>
+    <HeaderLineIndex>0</HeaderLineIndex>
+  </HeaderLines>
+  <DataStartLineIndex>1</DataStartLineIndex>
+  <DataValueSeparators>,;	</DataValueSeparators>
+  <UseEuroDecimalFormat>False</UseEuroDecimalFormat>
+  <FileLineMatchers />
+  <Calculators />
+  <ColumnMappings>
+    <ColumnMapping inputColumnText="GlobalTime" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="&lt;Required&gt;" dataType="Data Running Time, Seconds" />
+    <ColumnMapping inputColumnText="bitrate" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="DJI FPV" dataType="bitrate" />
+    <ColumnMapping inputColumnText="rcSignal" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="DJI FPV" dataType="rcSignal" />
+    <ColumnMapping inputColumnText="delay" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="DJI FPV" dataType="delay" />
+    <ColumnMapping inputColumnText="uavBat" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="DJI FPV" dataType="uavBat" />
+    <ColumnMapping inputColumnText="glsBat" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="DJI FPV" dataType="glsBat" />
+    <ColumnMapping inputColumnText="signal" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="DJI FPV" dataType="signal" />
+  </ColumnMappings>
+</DataProfile>

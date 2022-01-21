@@ -38,4 +38,12 @@
     <DataType>SERVO8</DataType>
     <DataType>RSSI</DataType>
   </Category>
+  <Category name="DJI FPV">
+    <DataType>rcSignal</DataType>
+    <DataType>delay</DataType>
+    <DataType>bitrate</DataType>
+    <DataType>glsBat</DataType>
+    <DataType>uavBat</DataType>
+    <DataType>signal</DataType>
+  </Category>
 </DataTypes>

@@ -631,5 +631,6 @@
     <ColumnMapping inputColumnText="iRSSI_RXRSSI_SCALED" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RSSI" />
     <ColumnMapping inputColumnText="iTune_Value" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Generic" dataType="Tune_Value" />
     <ColumnMapping inputColumnText="MSG_Message" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="Generic" dataType="Message" />
+    <ColumnMapping inputColumnText="iRCIN_C3" inputColumnMatchMode="ExactMatch" inputColumnIgnoreCase="False" dataCategory="RCIN,SERVO" dataType="RC3" />
   </ColumnMappings>
 </DataProfile>

@@ -1,0 +1,53 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="139.8764" height="103.8764" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <Rectangle x="18.50549" y="8.32428" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="18.50549" y="36.45337" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="18.50549" y="66.23102" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <DynamicText x="20.2821" y="11.58124" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Enigmatic Unicode" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">bitrate</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="20.2821" y="41.82214" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Enigmatic Unicode" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">signal</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="20.2821" y="70" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Enigmatic Unicode" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">delay</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="27.38831" y="70" width="88.82866" height="17.76573" minValue="90" maxValue="22" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">delay</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="27.38831" y="40.00653" width="88.82866" height="17.76573" minValue="0" maxValue="4" direction="LeftToRight" startTransparency="0" startRed="253" startGreen="254" startBlue="254" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">signal</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="27.38831" y="11.58124" width="88.82866" height="17.76573" minValue="0" maxValue="26" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">bitrate</Input>
+      </Inputs>
+    </Bar>
+    <Text x="61.7354" y="11.58124" text="Mbps" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Enigmatic Unicode" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="254" fontGreen="252" fontBlue="252" />
+    <Text x="61.7354" y="71" text="ms" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Enigmatic Unicode" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="252" fontGreen="250" fontBlue="250" />
+    <Text x="61.7354" y="42.19086" text="SGNL" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Enigmatic Unicode" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="251" fontGreen="251" fontBlue="251" />
+    <Bar x="27.38831" y="69.4881" width="88.82866" height="17.76573" minValue="19" maxValue="25.2" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">uavBat</Input>
+      </Inputs>
+    </Bar>
+  </Components>
+  <Inputs>
+    <Input category="DJI FPV" name="bitrate" fromFastestLapSamePos="False">bitrate</Input>
+    <Input category="DJI FPV" name="rcSignal" fromFastestLapSamePos="False">rcSignal</Input>
+    <Input category="DJI FPV" name="delay" fromFastestLapSamePos="False">delay</Input>
+    <Input category="DJI FPV" name="uavBat" fromFastestLapSamePos="False">uavBat</Input>
+    <Input category="DJI FPV" name="glsBat" fromFastestLapSamePos="False">glsBat</Input>
+    <Input category="DJI FPV" name="signal" fromFastestLapSamePos="False">signal</Input>
+  </Inputs>
+</Gauge>
