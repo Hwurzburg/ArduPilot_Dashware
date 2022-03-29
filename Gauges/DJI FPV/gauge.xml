@@ -1,0 +1,84 @@
+<Gauge version="3" x="0" y="0" readOnly="False" width="242.8764" height="240.8764" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <Rectangle x="128.5055" y="13.32428" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="128.5055" y="41.45337" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="128.5055" y="96.23102" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="128.5055" y="68.99023" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="128.5055" y="123.4717" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <Rectangle x="128.5055" y="151" width="99.48809" height="24.57593" roundCorners="True" cornerRadius="1.509182" penWidth="0.3018364" transparency="1" red="255" green="255" blue="255" />
+    <DynamicText x="130.2821" y="16.58124" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">bitrate</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="130.2821" y="45.82214" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">signal</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="130.2821" y="100" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">delay</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="130.2821" y="127" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">uavBat</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="130.2821" y="155" displayType="Decimal" decimalPrecision="1" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">glsBat</Input>
+      </Inputs>
+    </DynamicText>
+    <DynamicText x="130.2821" y="73" displayType="Integer" decimalPrecision="2" showPlus="False" restrictRange="False" restrictedMinValue="-3.40282346638529E+38" restrictedMaxValue="3.40282346638529E+38" convertFromGMT="True" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="11.84382" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255">
+      <Inputs>
+        <Input name="Value">rcSignal</Input>
+      </Inputs>
+    </DynamicText>
+    <Bar x="137.3883" y="100" width="88.82866" height="17.76573" minValue="90" maxValue="22" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">delay</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="137.3883" y="45.00653" width="88.82866" height="17.76573" minValue="0" maxValue="4" direction="LeftToRight" startTransparency="0" startRed="253" startGreen="254" startBlue="254" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">signal</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="137.3883" y="73" width="88.82866" height="17.76573" minValue="0" maxValue="4" direction="LeftToRight" startTransparency="0" startRed="253" startGreen="254" startBlue="254" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">rcSignal</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="137.3883" y="16.58124" width="88.82866" height="17.76573" minValue="0" maxValue="26" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">bitrate</Input>
+      </Inputs>
+    </Bar>
+    <Text x="171.7354" y="16.58124" text="Mbps" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="254" fontGreen="252" fontBlue="252" />
+    <Text x="171.7354" y="101" text="ms" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="252" fontGreen="250" fontBlue="250" />
+    <Text x="171.7354" y="46.19086" text="SGNL" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="251" fontGreen="251" fontBlue="251" />
+    <Bar x="137.3883" y="99.4881" width="88.82866" height="17.76573" minValue="19" maxValue="25.2" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">uavBat</Input>
+      </Inputs>
+    </Bar>
+    <Bar x="137.3883" y="155" width="88.82866" height="17.76573" minValue="9" maxValue="12.6" direction="LeftToRight" startTransparency="0" startRed="255" startGreen="255" startBlue="255" endTransparency="1" endRed="0" endGreen="255" endBlue="0">
+      <Inputs>
+        <Input name="Value">glsBat</Input>
+      </Inputs>
+    </Bar>
+    <Text x="171.7354" y="129" text="V" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="252" fontGreen="250" fontBlue="250" />
+    <Text x="171.7354" y="156" text="V" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="252" fontGreen="250" fontBlue="250" />
+    <Text x="171.7354" y="74" text="RC" fontRectWidth="59.21911" fontRectHeight="29.60955" fontFace="Arial" fontSize="10.65944" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="left" fontVAlign="top" fontTransparency="1" fontRed="251" fontGreen="251" fontBlue="251" />
+  </Components>
+  <Inputs>
+    <Input category="DJI FPV" name="bitrate" fromFastestLapSamePos="False">bitrate</Input>
+    <Input category="DJI FPV" name="rcSignal" fromFastestLapSamePos="False">rcSignal</Input>
+    <Input category="DJI FPV" name="delay" fromFastestLapSamePos="False">delay</Input>
+    <Input category="DJI FPV" name="uavBat" fromFastestLapSamePos="False">uavBat</Input>
+    <Input category="DJI FPV" name="glsBat" fromFastestLapSamePos="False">glsBat</Input>
+    <Input category="DJI FPV" name="signal" fromFastestLapSamePos="False">signal</Input>
+  </Inputs>
+</Gauge>

@@ -1,0 +1,19 @@
+<Gauge version="3" x="15.36605" y="988.7134" readOnly="False" width="221.1651" height="35.38642" transparency="1" rotation="0" thumbnailBackgroundTransparency="1" thumbnailBackgroundRed="135" thumbnailBackgroundGreen="206" thumbnailBackgroundBlue="235">
+  <Components>
+    <FilledRectangle x="1.474438" y="-3.686096" width="246.2305" height="44.23302" roundCorners="False" cornerRadius="24.94743" transparency="0.254902" red="8" green="8" blue="8" />
+    <Rectangle x="106.1592" y="0.7372437" width="1.474434" height="36.86084" roundCorners="False" cornerRadius="3.686085" penWidth="2.21165" transparency="1" red="11" green="11" blue="11" />
+    <Rectangle x="106.8964" y="7.37207" width="91.41491" height="16.95599" roundCorners="False" cornerRadius="9.419996" penWidth="4.09565" transparency="1" red="4" green="4" blue="4">
+      <Components>
+        <Bar x="2.211655" y="2.21167" width="87.72882" height="13.2699" minValue="1500" maxValue="1900" direction="LeftToRight" startTransparency="1" startRed="255" startGreen="0" startBlue="0" endTransparency="1" endRed="255" endGreen="0" endBlue="0">
+          <Inputs>
+            <Input name="Value">SERVO4</Input>
+          </Inputs>
+        </Bar>
+      </Components>
+    </Rectangle>
+    <Text x="11.05825" y="8.109314" text="FLAPS" fontRectWidth="80.35665" fontRectHeight="18.43043" fontFace="Arial" fontSize="15.48155" fontBold="True" fontItalic="False" fontUnderline="False" fontDirection="horizontal" fontAlign="right" fontVAlign="center" fontTransparency="1" fontRed="255" fontGreen="255" fontBlue="255" />
+  </Components>
+  <Inputs>
+    <Input category="RCIN,SERVO" name="SERVO4" fromFastestLapSamePos="False">SERVO4</Input>
+  </Inputs>
+</Gauge>
